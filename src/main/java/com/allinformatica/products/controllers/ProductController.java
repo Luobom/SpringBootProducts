@@ -1,6 +1,6 @@
 package com.allinformatica.products.controllers;
 
-import com.allinformatica.products.dtos.ProductRecordDto;
+import com.allinformatica.products.dtos.ProductRecordDTO;
 import com.allinformatica.products.models.ProductModel;
 import com.allinformatica.products.repositories.ProductRepository;
 import jakarta.validation.Valid;
@@ -11,7 +11,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Objects;
 import java.util.Optional;
 import java.util.UUID;
 
@@ -25,7 +24,7 @@ public class ProductController {
     ProductRepository productRepository;
 
     @PostMapping("/products")
-    public ResponseEntity<ProductModel> saveProduct(@RequestBody @Valid ProductRecordDto productRecordDto) {
+    public ResponseEntity<ProductModel> saveProduct(@RequestBody @Valid ProductRecordDTO productRecordDto) {
         var productModel = new ProductModel();
         BeanUtils.copyProperties(productRecordDto, productModel);
         return ResponseEntity.status(HttpStatus.CREATED).body(productRepository.save(productModel));
@@ -56,7 +55,7 @@ public class ProductController {
 
     @PutMapping("/products/{id}")
     public ResponseEntity<Object> updateProduct(@PathVariable(value = "id") UUID id,
-                                                @RequestBody @Valid ProductRecordDto productRecordDto){
+                                                @RequestBody @Valid ProductRecordDTO productRecordDto){
         Optional<ProductModel> productO = productRepository.findById(id);
 
         if(productO.isEmpty())
