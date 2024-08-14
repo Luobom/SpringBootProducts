@@ -1,4 +1,4 @@
-package com.allinformatica.products.dtos;
+package com.allinformatica.products.dto;
 
 public record AuthenticationDTO(String login, String passwd) {
 

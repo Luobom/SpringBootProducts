@@ -1,4 +1,4 @@
-package com.allinformatica.products.infra.security;
+package com.allinformatica.products.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;

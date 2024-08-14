@@ -1,13 +1,12 @@
 package com.allinformatica.products.controllers;
 
-import com.allinformatica.products.dtos.AuthenticationDTO;
-import com.allinformatica.products.dtos.LoginResponseDTO;
-import com.allinformatica.products.dtos.RegisterDTO;
-import com.allinformatica.products.infra.security.TokenService;
+import com.allinformatica.products.dto.AuthenticationDTO;
+import com.allinformatica.products.dto.LoginResponseDTO;
+import com.allinformatica.products.dto.RegisterDTO;
+import com.allinformatica.products.security.TokenService;
 import com.allinformatica.products.models.UsersModel;
 import com.allinformatica.products.repositories.UserRepository;
 import jakarta.validation.Valid;
-import org.apache.coyote.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;

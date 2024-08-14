@@ -1,4 +1,4 @@
-package com.allinformatica.products.infra.security;
+package com.allinformatica.products.security;
 
 import com.allinformatica.products.models.UsersModel;
 import com.auth0.jwt.JWT;

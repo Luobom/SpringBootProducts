@@ -1,4 +1,4 @@
-package com.allinformatica.products.infra.security;
+package com.allinformatica.products.security;
 
 import com.allinformatica.products.repositories.UserRepository;
 import jakarta.servlet.FilterChain;

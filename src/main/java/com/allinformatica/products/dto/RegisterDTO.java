@@ -1,4 +1,4 @@
-package com.allinformatica.products.dtos;
+package com.allinformatica.products.dto;
 
 import com.allinformatica.products.models.UserRolesModel;
 

@@ -1,6 +1,6 @@
 package com.allinformatica.products.controllers;
 
-import com.allinformatica.products.dtos.ProductRecordDTO;
+import com.allinformatica.products.dto.ProductRecordDTO;
 import com.allinformatica.products.models.ProductModel;
 import com.allinformatica.products.repositories.ProductRepository;
 import jakarta.validation.Valid;
